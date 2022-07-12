@@ -5,15 +5,8 @@ using TMPro;
 
 public class ShopTemplate : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public TMP_Text titleTxt;
+    public TMP_Text descriptionTxt;
+    public GameObject artwork;
+    public TMP_Text costTxt;
 }

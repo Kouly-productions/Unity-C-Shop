@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cf8517996687754e840a5901e96689a, type: 3}
+  m_Script: {fileID: 11500000, guid: 00373d6d27df32742a997dff8404ccd8, type: 3}
   m_Name: Freddy
   m_EditorClassIdentifier: 
-  description: "Freddy, er en meget god medhj\xE6lper. Han vil g\xF8re sit bedste
-    for at passe p\xE5 dine penge, og han pr\xF8ver ogs\xE5 at komme med gode r\xE5d.
-    Han er dog lidt selvglad"
-  title: Freddy Fazbear
+  title: Freddy
+  description: awfrawfa
   artwork: {fileID: 21300000, guid: 32db6f8ab78f6e842aa3c79ad3d12775, type: 3}
-  price: 100
+  BaseCost: 10
