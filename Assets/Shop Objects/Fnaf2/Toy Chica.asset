@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00373d6d27df32742a997dff8404ccd8, type: 3}
-  m_Name: Toy Freddy
+  m_Name: Toy Chica
   m_EditorClassIdentifier: 
-  title: Toy Freddy
-  description: wawdawa
-  BaseCost: 5500
+  title: Toy Chica
+  description: wfawf
+  BaseCost: 3500

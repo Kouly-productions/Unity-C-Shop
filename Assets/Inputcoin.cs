@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class Money : MonoBehaviour
+public class Inputcoin : MonoBehaviour
 {
-    public int money = 0;
-    public Text currentMoneyShow;
+    public ShopManagerScript shop;
+    public TMP_InputField coinInput;
+    public GameObject plane;
+    int value;
     // Start is called before the first frame update
     void Start()
     {
-        currentMoneyShow.text = money.ToString();
+        Debug.Log("Shop.coins is : " + shop.coins);
     }
 
     // Update is called once per frame
@@ -18,4 +21,9 @@ public class Money : MonoBehaviour
     {
         
     }
+
+    public void confirmMoney()
+    {
+    }
+
 }

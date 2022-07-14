@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00373d6d27df32742a997dff8404ccd8, type: 3}
-  m_Name: Toy Freddy
+  m_Script: {fileID: 11500000, guid: d47bb6e137ca711419e1a97f9668e577, type: 3}
+  m_Name: New Int SO
   m_EditorClassIdentifier: 
-  title: Toy Freddy
-  description: wawdawa
-  BaseCost: 5500
+  _Value: 3160

@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cf8517996687754e840a5901e96689a, type: 3}
+  m_Script: {fileID: 11500000, guid: 00373d6d27df32742a997dff8404ccd8, type: 3}
   m_Name: Foxy
   m_EditorClassIdentifier: 
-  description: "Foxy, er en god vagt. Han kr\xE6ver tilgeng\xE6ld noget betaling,
-    og det er Sodavand, en masse sodavand"
   title: Foxy
-  artwork: {fileID: 21300000, guid: 8dfa0d380fc23c345a9d25ec0af053d8, type: 3}
-  price: 110
+  description: awwfawfr
+  BaseCost: 4600
