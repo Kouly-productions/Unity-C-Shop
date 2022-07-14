@@ -2805,6 +2805,7 @@ MonoBehaviour:
   - {fileID: 1661644903}
   coinInput: {fileID: 1471864014}
   plane: {fileID: 1339884295}
+  cashSO: {fileID: 11400000, guid: 86a004feada34034798c36fd3aa26972, type: 2}
 --- !u!222 &1176260274
 CanvasRenderer:
   m_ObjectHideFlags: 0

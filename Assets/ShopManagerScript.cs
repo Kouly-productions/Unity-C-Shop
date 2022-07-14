@@ -25,7 +25,7 @@ public class ShopManagerScript : MonoBehaviour
     {
         for (int i = 0; i < shopItemsSO.Length; i++)
             shopPanelsGO[i].SetActive(true);
-        coinUI.text = "Penge: " + coins.ToString();
+        coinUI.text = "Penge: " + cashSO.Value.ToString();
         LoadPanels();
         CheckPurchasable();
     }
@@ -38,7 +38,8 @@ public class ShopManagerScript : MonoBehaviour
     public void SetCoins()
     {
         string inputmoney = coinInput.text;
-        coins = int.Parse(inputmoney);
+        cashSO.Value = int.Parse(inputmoney);
+        //coins = int.Parse(inputmoney);
 
         coinUI.text = "Penge: " + inputmoney;
 
@@ -49,8 +50,8 @@ public class ShopManagerScript : MonoBehaviour
 
     public void AddCoins()
     {
-        coins++;
-        coinUI.text = "Penge: " + coins.ToString();
+        cashSO.Value++;
+        coinUI.text = "Penge: " + cashSO.Value.ToString();
         CheckPurchasable();
     }
 
@@ -58,7 +59,7 @@ public class ShopManagerScript : MonoBehaviour
     {
         for (int i = 0; i < shopItemsSO.Length; i++)
         {
-            if (coins >= shopItemsSO[i].BaseCost) // If I have enough money
+            if (cashSO.Value >= shopItemsSO[i].BaseCost) // If I have enough money
                 myPurchaseBtns[i].interactable = true;
             else
                 myPurchaseBtns[i].interactable = false;
@@ -67,10 +68,10 @@ public class ShopManagerScript : MonoBehaviour
 
     public void PurchaseItem(int btnNo)
     {
-        if (coins >= shopItemsSO[btnNo].BaseCost)
+        if (cashSO.Value >= shopItemsSO[btnNo].BaseCost)
         {
-            coins = coins - shopItemsSO[btnNo].BaseCost;
-            coinUI.text = "Penge: " + coins.ToString();
+            cashSO.Value = cashSO.Value - shopItemsSO[btnNo].BaseCost;
+            coinUI.text = "Penge: " + cashSO.Value.ToString();
             CheckPurchasable();
         }
     }

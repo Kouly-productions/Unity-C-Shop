@@ -690,7 +690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleTxt: {fileID: 1551010699527969808}
   descriptionTxt: {fileID: 4413885200230044903}
-  artwork: {fileID: 7831020483141777890}
   costTxt: {fileID: 7359342131497438074}
 --- !u!1 &7831020484704496445
 GameObject:
