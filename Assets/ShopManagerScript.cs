@@ -13,6 +13,13 @@ public class ShopManagerScript : MonoBehaviour
     public ShopTemplate[] shopPanels;
     public Button[] myPurchaseBtns;
 
+    public TMP_InputField coinInput;
+    public GameObject plane;
+
+    [SerializeField]
+    private IntSO cashSO;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +33,18 @@ public class ShopManagerScript : MonoBehaviour
     private void Update()
     {
         
+    }
+
+    public void SetCoins()
+    {
+        string inputmoney = coinInput.text;
+        coins = int.Parse(inputmoney);
+
+        coinUI.text = "Penge: " + inputmoney;
+
+        CheckPurchasable();
+
+        plane.SetActive(false);
     }
 
     public void AddCoins()
@@ -62,7 +81,7 @@ public class ShopManagerScript : MonoBehaviour
         {
             shopPanels[i].titleTxt.text = shopItemsSO[i].title;
             shopPanels[i].descriptionTxt.text = shopItemsSO[i].description;
-            shopPanels[i].costTxt.text = "Coins: " + shopItemsSO[i].BaseCost.ToString();
+            shopPanels[i].costTxt.text = "Pris: " + shopItemsSO[i].BaseCost.ToString();
         }
     }
 }

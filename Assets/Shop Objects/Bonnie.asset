@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Bonnie
   description: aefawf
-  artwork: {fileID: 21300000, guid: 352d0de53f1e6904098e804076325d0e, type: 3}
-  BaseCost: 180
+  BaseCost: 3500
